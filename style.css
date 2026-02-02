@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #070d1c;
+    color: #e6f4ff;
+}
+
+/* NAVBAR */
+nav {
+    background: #050a18;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #00c6ff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    text-align: center;
+    padding-top: 180px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff; }
+    to { text-shadow: 0 0 30px #fff; }
+}
+
+/* VIDEOS */
+.videos {
+    padding: 50px;
+    text-align: center;
+}
+
+.videos iframe {
+    width: 90%;
+    max-width: 900px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+/* GAMES */
+.games {
+    text-align: center;
+    padding: 40px;
+}
+
+.game-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.game-logos img {
+    width: 160px;
+    filter: drop-shadow(0 0 10px #00c6ff);
+}
+
+/* CONTACT */
+.contact {
+    background: #050a18;
+    padding: 40px;
+    text-align: center;
+}
